@@ -1,14 +1,14 @@
-let numrep = parseInt(prompt("Introduce un número"));
+var numrep = parseInt(prompt("Introduce numero de repeticiones"));
 
 if (numrep == numrep) {
     
     if (numrep > 0 && numrep <= 50) {
-        let rep,i;
+        var rep,i;
         
-        for (i = numrep; i >= 1; i--) {
+        for (i = 0; i <=numrep; i++) {
             
-            for (rep = i; rep >= 1; rep--) {
-                document.write(i);
+            for (rep = 1; rep <= i; rep++) {
+                document.write(rep);
             }
             document.write("<br>");
         }
